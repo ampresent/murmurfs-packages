@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+# Install Python dependencies
+pip3 install --break-system-packages fusepy pyyaml click requests 2>/dev/null || \
+pip3 install fusepy pyyaml click requests 2>/dev/null || true
+
+# Make CLI executable
+chmod +x /usr/bin/murmurfs
+
+echo "MurmurFS installed successfully."
+echo "AI guide: /usr/share/doc/murmurfs/CLAUDE_GUIDE.md"
+echo "Quick start: murmurfs init my-project -d 'description'"

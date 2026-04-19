@@ -1,0 +1,16 @@
+Package: murmurfs
+Version: 0.1.0
+Section: utils
+Priority: optional
+Architecture: all
+Depends: python3 (>= 3.10), python3-pip, fuse
+Maintainer: MurmurFS Contributors <murmurfs@example.com>
+Description: A FUSE filesystem where AI agents store intent, not content
+ MurmurFS lets AI agents write intent summaries instead of full file
+ contents. Files are "fuzzy" stacks of intention until synced, at which
+ point an LLM synthesizes all layers into concrete files.
+ .
+ This package includes a Claude/AI understanding guide at
+ /usr/share/doc/murmurfs/CLAUDE_GUIDE.md that helps language models
+ understand the filesystem design for optimized memory and token usage.
+Homepage: https://github.com/ampresent/murmurfs
